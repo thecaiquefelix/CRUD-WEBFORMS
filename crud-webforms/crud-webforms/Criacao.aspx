@@ -38,7 +38,7 @@
 			</div>
 
 			<div>
-				<asp:Label runat="server" ID="lblMsg"></asp:Label>
+				<asp:Label runat="server" ID="lblMsg" Text=""></asp:Label>
 			</div>
 
 			<asp:Button runat="server" Text="Criar" ID="btnCriar" OnClick="btnCriar_Click" />
