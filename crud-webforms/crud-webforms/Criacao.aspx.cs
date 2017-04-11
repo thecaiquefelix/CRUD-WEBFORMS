@@ -13,15 +13,10 @@ namespace crud_webforms
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		protected void btnCriar_Click(object sender, EventArgs e)
-		{
-			Response.Redirect("Listagem.aspx");
-		}
-
-		protected void btnVoltar_Click(object sender, EventArgs e)
 		{
 			string nome = txtNome.Text.Trim();
 			if (nome.Length == 0)
@@ -85,13 +80,17 @@ namespace crud_webforms
 
 			//Limpa todos os campos ao final
 			txtNome.Text = "";
-			txtEmail.Text = "";		
+			txtEmail.Text = "";
 			txtNascimento.Text = "";
 			txtPeso.Text = "";
 			txtEndereco.Text = "";
 
 			lblMsg.Text = "Criado com sucesso!";
+		}
 
+		protected void btnVoltar_Click(object sender, EventArgs e)
+		{
+			Response.Redirect("Listagem.aspx");
 		}
 	}
 }
