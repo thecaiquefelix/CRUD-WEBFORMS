@@ -55,6 +55,13 @@ namespace crud_webforms
 
 		protected void btnSalvar_Click(object sender, EventArgs e)
 		{
+			int id;
+
+			if (int.TryParse(Request.QueryString["id"], out id) == false)
+			{
+				lblMsg.Text = "Id inválido!";
+				return;
+			}
 
 			string nome = txtNome.Text.Trim();
 			if (nome.Length == 0)
@@ -111,6 +118,8 @@ namespace crud_webforms
 					cmd.Parameters.AddWithValue("@nascimento", nascimento);
 					cmd.Parameters.AddWithValue("@peso", peso);
 					cmd.Parameters.AddWithValue("@endereco", endereco);
+
+					cmd.Parameters.AddWithValue("@id", id);
 
 					cmd.ExecuteNonQuery();
 				}

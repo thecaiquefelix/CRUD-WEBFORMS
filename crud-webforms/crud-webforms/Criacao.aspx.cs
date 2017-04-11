@@ -69,7 +69,7 @@ namespace crud_webforms
 				using (SqlCommand cmd = new SqlCommand("INSERT INTO tbPessoa (Nome, Email, Nascimento, Peso, Endereco) VALUES (@nome, @email, @nascimento, @peso, @endereco)", conn))
 				{
 					cmd.Parameters.AddWithValue("@nome", nome);
-					cmd.Parameters.AddWithValue("@emai", email);
+					cmd.Parameters.AddWithValue("@email", email);
 					cmd.Parameters.AddWithValue("@nascimento", nascimento);
 					cmd.Parameters.AddWithValue("@peso", peso);
 					cmd.Parameters.AddWithValue("@endereco", endereco);
