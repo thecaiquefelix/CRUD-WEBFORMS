@@ -11,7 +11,7 @@ namespace crud_webforms.Utils
 
 		public static SqlConnection OpenConnection()
 		{
-			SqlConnection conn = new SqlConnection("Server=tcp:crud-webforms.database.windows.net,1433;Database=crud-webforms;User ID=caique@caiqueteste;Password=mudar123!;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+			SqlConnection conn = new SqlConnection("Server=tcp:crud-webforms.database.windows.net,1433;Database=crud-webforms;User ID=caique;Password=mudar123!;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
 			conn.Open();
 
