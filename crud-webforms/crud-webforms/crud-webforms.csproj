@@ -67,6 +67,9 @@
   <ItemGroup>
     <Content Include="Criacao.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Edicao.aspx" />
+    <Content Include="Exclusao.aspx" />
+    <Content Include="Listagem.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -93,6 +96,27 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edicao.aspx.cs">
+      <DependentUpon>Edicao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edicao.aspx.designer.cs">
+      <DependentUpon>Edicao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Exclusao.aspx.cs">
+      <DependentUpon>Exclusao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Exclusao.aspx.designer.cs">
+      <DependentUpon>Exclusao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listagem.aspx.cs">
+      <DependentUpon>Listagem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listagem.aspx.designer.cs">
+      <DependentUpon>Listagem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
