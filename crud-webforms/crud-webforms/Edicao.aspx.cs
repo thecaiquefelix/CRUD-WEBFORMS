@@ -13,6 +13,13 @@ namespace crud_webforms
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			HttpCookie cookie = Request.Cookies["login"];
+			if (cookie == null || cookie.Value != "ok")
+			{
+				Response.Redirect("Default.aspx");
+				return;
+			}
+
 			if (IsPostBack == false)
 			{
 				int id;

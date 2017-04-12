@@ -3,13 +3,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div>
+        <div class="container">
+
 			<div>
 				<a href="Criacao.aspx">Cadastrar novo...</a>
 			</div>
 
-			<table class="table table-stripe "
-				<thead>
+			<table class="table table-stripe">
 					<tr>
 						<th>Nome</th>
 						<th>E-mail</th>
@@ -19,7 +19,6 @@
 						<th></th>
 						<th></th>
 					</tr>
-				</thead>
 				<tbody>
 					<asp:Repeater runat="server" ID="listRepeater">
 						<ItemTemplate>
@@ -36,7 +35,9 @@
 					</asp:Repeater>
 				</tbody>
 			</table>
-	</div>
+
+		</div>
+
 </asp:Content>
 
 

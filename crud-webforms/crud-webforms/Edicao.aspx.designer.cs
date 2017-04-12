@@ -13,15 +13,6 @@ namespace crud_webforms {
     public partial class Edicao {
         
         /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
         /// txtNome control.
         /// </summary>
         /// <remarks>
@@ -67,15 +58,6 @@ namespace crud_webforms {
         protected global::System.Web.UI.WebControls.TextBox txtEndereco;
         
         /// <summary>
-        /// lblMsg control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMsg;
-        
-        /// <summary>
         /// btnSalvar control.
         /// </summary>
         /// <remarks>
@@ -92,5 +74,14 @@ namespace crud_webforms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnVoltar;
+        
+        /// <summary>
+        /// lblMsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMsg;
     }
 }

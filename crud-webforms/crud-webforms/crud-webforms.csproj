@@ -73,7 +73,6 @@
     <Content Include="Logout.aspx" />
     <Content Include="packages.config" />
     <Content Include="LayoutMaster.Master" />
-    <Content Include="WebForm1.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -82,6 +81,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Style\css\login.css" />
+    <Content Include="Style\image\sea.gif" />
+    <Content Include="testes.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -136,15 +138,16 @@
     </Compile>
     <Compile Include="Models\Pessoa.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\Sql.cs" />
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="testes.aspx.cs">
+      <DependentUpon>testes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="testes.aspx.designer.cs">
+      <DependentUpon>testes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utils\Sql.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
